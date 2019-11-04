@@ -1,0 +1,40 @@
+{
+    "name": "lordrhodos/memory-console-game",
+    "description": "Simple memory console game",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Patrick Rodacker",
+            "email": "patrick@rodacker.de"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.3",
+        "lordrhodos/memory-domain": "dev-master",
+        "symfony/console": "^4.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "MemoryConsole\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MemoryConsole\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpunit": "php vendor/bin/phpunit",
+        "phpunit-coverage": "php vendor/bin/phpunit --coverage-text"
+    }
+}
